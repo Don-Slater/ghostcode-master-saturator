@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghostcode Master Saturator Demo</title>
+<style>
+body{margin:0;background:#fff;color:#050505;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(1180px,calc(100vw - 32px));margin:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dfe3e7}
+.brand{font-weight:950;letter-spacing:.08em}
+main{padding:44px 0 54px}
+h1{font-size:clamp(42px,7vw,82px);line-height:.92;margin:0 0 16px}
+p{color:#4e5660;font-size:20px;max-width:760px}
+.videoBox{margin-top:30px;border:1px solid #dfe3e7;border-radius:10px;box-shadow:0 28px 70px #0002;overflow:hidden;background:#000}
+video{display:block;width:100%;height:auto}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+button,a{border:1px solid #050505;background:#050505;color:#fff;padding:13px 18px;font-weight:850;text-decoration:none;cursor:pointer}
+button.green{background:#10e363;border-color:#10e363;color:#041007}
+.note{font-size:14px;color:#68717b;margin-top:14px}
+footer{border-top:1px solid #dfe3e7;padding:28px 0;color:#68717b;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="brand">GHOSTCODE MASTER SATURATOR</div>
+  <div>Free Download</div>
+</header>
+
+<main class="wrap">
+  <h1>Master Saturator Demo</h1>
+  <p>Five bass sources transitioned through a Ghostcode-style mastering chain: sub weight, Reese movement, Dread pressure, 808 LFO motion and airy polish.</p>
+
+  <div class="videoBox">
+    <video controls playsinline preload="metadata" poster="/Users/markslater/Documents/  dubs 2/Atmos D and B  pack/20.,20 loop pack/Pad's/a1111.png">
+      <source src="assets/ghostcode-master-saturator-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="actions">
+    <button class="green" onclick="copyShareLink()">Copy Share Link</button>
+    <a href="assets/ghostcode-master-saturator-demo.mp4" download>Download Video</a>
+    <a href="index.html">Back To Product Page</a>
+  </div>
+
+  <div id="status" class="note">When this page is uploaded to your website, Copy Share Link copies the public demo URL.</div>
+</main>
+
+<footer class="wrap">
+  <span>Analyse. Refine. Build. Create.</span>
+  <span>© 2026 Mark Slater / Ease Audio • Ghostcode™</span>
+</footer>
+
+<script>
+async function copyShareLink(){
+  const url = window.location.href;
+  await navigator.clipboard.writeText(url);
+  document.getElementById("status").textContent = "Share link copied: " + url;
+}
+</script>
+</body>
+</html>

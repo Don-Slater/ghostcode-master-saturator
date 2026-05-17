@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghostcode Master Saturator</title>
+<style>
+:root{--ink:#050505;--muted:#5f6670;--line:#dfe3e7;--soft:#f6f7f8;--green:#10e363;--dark:#090a0b}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{width:min(1180px,calc(100vw - 32px));margin:auto}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:950;letter-spacing:.08em}.nav span{color:var(--muted);font-size:13px;letter-spacing:.2em}
+.hero{padding:46px 0 56px}.eyebrow{font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#079944;font-size:13px}
+h1{font-size:clamp(44px,7vw,94px);line-height:.9;margin:16px 0 18px}.lead{font-size:21px;color:#333b43;max-width:850px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.btn,button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 20px;border:1px solid #111;text-decoration:none;font-weight:850;background:#050505;color:#fff;cursor:pointer}.green{background:var(--green);border-color:var(--green);color:#041007}
+.videoBox{margin-top:30px;border:1px solid var(--line);border-radius:10px;box-shadow:0 28px 70px #0002;overflow:hidden;background:#000}video{display:block;width:100%;height:auto}
+.status{font-size:14px;color:#68717b;margin-top:12px}.product{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 18px 50px #0001;padding:12px}.product img{display:block;width:100%;border-radius:4px}
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fbfbfb}.stats{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:24px 20px;border-left:1px solid var(--line)}.stat strong{display:block;font-size:26px}.stat span{color:var(--muted)}
+section.info{padding:74px 0}.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px}.kicker{color:#079944;font-weight:850;letter-spacing:.14em;text-transform:uppercase;font-size:13px}h2{font-size:clamp(34px,4.4vw,60px);line-height:1;margin:10px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);background:#fff;border-radius:8px;padding:22px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.dark{background:var(--dark);color:#fff}.dark .lead{color:#c8ced3}.footer{padding:36px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--muted)}
+@media(max-width:900px){.split{grid-template-columns:1fr}.stats,.grid{grid-template-columns:1fr}.nav span{display:none}}
+.downloadBox{display:grid;gap:8px;background:#10e363;color:#041007;border:1px solid #10e363;border-radius:8px;padding:14px 18px;font-weight:850;max-width:720px}.downloadBox strong{font-size:13px;letter-spacing:.16em}.downloadBox a{word-break:break-all;text-decoration:none;color:#041007}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">GHOSTCODE MASTER SATURATOR</div><span>DRUM & BASS AUDIO TOOLS</span></header>
+
+<main>
+<section class="wrap hero">
+  <div class="eyebrow">Free Download • Full Version</div>
+  <h1>Master Saturator</h1>
+  <p class="lead">A premium harmonic enhancer built for bass, DnB, electronic music and sound design. This front-page demo transitions sub, Reese, Dread, 808 LFO and airy bass sources through a Ghostcode-style master chain.</p>
+
+  <div class="actions">
+    <div class="downloadBox"><strong>DOWNLOAD LINK</strong><a href="https://mega.nz/folder/57FT1LpY#-7wOX0WIUK9e4sJavr6UHQ" target="_blank" rel="noreferrer">https://mega.nz/folder/57FT1LpY#-7wOX0WIUK9e4sJavr6UHQ</a></div>
+    <button onclick="copyShareLink()">Copy Share Link</button>
+    <a class="btn" href="assets/ghostcode-master-saturator-demo.mp4" download>Download Video</a>
+  </div>
+  <div id="status" class="status">Copy Share Link copies this front page URL.</div>
+
+  <div class="videoBox">
+    <video controls playsinline preload="metadata" poster="assets/master-saturator.png">
+      <source src="assets/ghostcode-master-saturator-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="product">
+    <img src="assets/master-saturator.png" alt="Ghostcode Master Saturator plugin interface">
+  </div>
+</section>
+
+<div class="band"><div class="wrap stats">
+  <div class="stat"><strong>64-bit</strong><span>double precision processing</span></div>
+  <div class="stat"><strong>4x</strong><span>r8brain oversampling</span></div>
+  <div class="stat"><strong>8 voice</strong><span>SIMD unison engine</span></div>
+  <div class="stat"><strong>Offline</strong><span>local Ghostcode Brain</span></div>
+</div></div>
+
+<section class="wrap info split">
+  <div><div class="kicker">What It Does</div><h2>Saturation for serious low-end work.</h2><p class="lead">Subtle air, hard grit, harmonic lift and weight. Built for producers who need bass to hit without falling apart.</p></div>
+  <div class="grid">
+    <div class="card"><h3>Heat</h3><p>Drive and density with clean gain staging.</p></div>
+    <div class="card"><h3>Body</h3><p>Low-end authority designed for bass music.</p></div>
+    <div class="card"><h3>Shine</h3><p>Presence and harmonic lift without brittle fizz.</p></div>
+    <div class="card"><h3>Soul</h3><p>Tape, valve and hybrid character modes.</p></div>
+    <div class="card"><h3>Mix</h3><p>Parallel wet/dry blend for precise control.</p></div>
+    <div class="card"><h3>Output</h3><p>Final trim for clean level matching.</p></div>
+  </div>
+</section>
+
+<section class="dark info"><div class="wrap split">
+  <div><div class="kicker">Ghostcode Brain</div><h2>The plugin learns your sound.</h2></div>
+  <p class="lead">After five sessions it generates Your Sound: a personal preset shaped from your own habits and preferences. All local. All offline. Your data never leaves you.</p>
+</div></section>
+</main>
+
+<footer class="wrap footer"><span>Analyse. Refine. Build. Create.</span><span>© 2026 Mark Slater / Ease Audio • Ghostcode™</span></footer>
+
+<script>
+async function copyShareLink(){
+  const url = window.location.href;
+  await navigator.clipboard.writeText(url);
+  document.getElementById("status").textContent = "Share link copied: " + url;
+}
+</script>
+</body>
+</html>
